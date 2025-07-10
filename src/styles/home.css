@@ -13,12 +13,12 @@
 }
 
 #cta .title {
-    font-size: 4rem;
+    font-size: 3rem;
     color: var(--color-neutral-1);;
 }
 
 #cta .title span {
-    color: var(--color-primary-6);
+    color: #f17ea1;
 }
 
 #cta .description {
@@ -54,19 +54,21 @@
     display: flex;
     align-items: start;
     justify-content: end;
-    width: 70%;
+    width: 90%;
     z-index: 2;
 }
 
 #banner img {
-    height: 100%;
+    height: 78%;
+    width: 80%;
+    border-radius:  40% 30% 0% 20%;
     width: fit-content;
 }
 
 .shape {
-    background-color: var(--color-primary-2);
-    width: 50%;
-    height: 100%;
+    background-color: #ffe4e1;
+    width: 60%;
+    height: 75%;
     position: absolute;
     border-radius: 40% 30% 0% 20%;
     top: 0;

@@ -3,8 +3,14 @@ header {
     padding: 28px 8%;
     position: sticky;
     top: 0;
-    background-color: var(--color-primary-1);
+    background-color: #fffafa;
     z-index: 3;
+}
+
+.logo{
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
 }
 
 #navbar {

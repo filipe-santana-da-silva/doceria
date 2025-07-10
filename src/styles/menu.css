@@ -28,6 +28,11 @@
     overflow: hidden;
 }
 
+.dish-title {
+    position: flex;
+    justify-content: center;
+}
+
 .dish-heart {
     position: absolute;
     background-color: var(--color-primary-6);
@@ -49,13 +54,19 @@
 }
 
 .dish-rate i {
-    color: var(--color-primary-6);
+    color: #ffdb58;
 }
 
 .dish-price {
     display: flex;
     align-items: center;
     gap: 20px;
+}
+
+.dish-image {
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
 }
 
 @media screen and (max-width: 1170px) {
