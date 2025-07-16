@@ -243,7 +243,7 @@
                     <img src="src/images/bolo-pote-brigadeiro.jpeg" class="dish-image" alt="">
 
                     <h3 class="dish-title">
-                        Brigadeiro
+                        Bolo de Pote de Brigadeiro
                     </h3>
 
                     <span class="dish-description">
@@ -347,30 +347,29 @@
     <script src="src/javascript/script.js"></script>
     <script>
         const swiper = new Swiper('.mySwiper', {
-            slidesPerView: 'auto',
-            spaceBetween: 30,
-            loop: false,
-            pagination: {
-            el: '.swiper-pagination',
-            clickable: true
-            },
-            navigation: {
-            nextEl: '.swiper-button-next',
-            prevEl: '.swiper-button-prev'
-            },
-            breakpoints: {
-            1024: {
-                slidesPerView: 4
-            },
-            768: {
-                slidesPerView: 2
-            },
-            480: {
-                slidesPerView: 1
-            }
-            }
+  slidesPerView: 'auto',
+  spaceBetween: 20,
+  loop: false,
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: true
+  },
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev'
+  },
+  breakpoints: {
+    480: { slidesPerView: 1 },
+    768: {
+      slidesPerView: 2
+    },
+    1024: {
+      slidesPerView: 3
+    }
+  }
+});
 
-        });
+
     </script>
 
 </body>
