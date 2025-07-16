@@ -29,7 +29,8 @@ html {
 }
 
 body {
-    background-color: #fffafa;
+    //background-color: #fffafa;
+     background: linear-gradient(to bottom, #fffafa 0%, #fffafa 80%, #ffe4e1 100%);
 }
 
 section {

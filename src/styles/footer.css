@@ -1,6 +1,19 @@
-footer {
-    background-color: var(--color-primary-2);
+.footer {
+  height: 200px;
+  width: 100%;
+  font-family: 'Segoe UI', sans-serif;
+  color: #312e2e;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(to bottom, #ffe4e1  0%, #ffc0cb 100%); /* gradiente horizontal */
 }
+
+.footer-content {
+  text-align: center;
+  line-height: 1.6;
+}
+
 
 #footer_items {
     display: flex;
