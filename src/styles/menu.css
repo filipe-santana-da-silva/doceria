@@ -7,30 +7,32 @@
 }
 
 #dishes {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    gap: 24px;
-    margin-top: 32px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
+    gap: 20px;
 }
 
 .dish {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    border-radius: 20px;
-    gap: 18px;
-    width: 25%;
-    padding: 20px;
-    background-color: var(--color-neutral-0);
-    box-shadow: 0px 0px 12px 4px rgba(0, 0, 0, 0.1);
-    position: relative;
-    overflow: hidden;
+  display: grid;
+  place-items: center;
+  grid-auto-rows: auto;
+  gap: 12px;
+  width: 20%;            /* Menor largura para compactar */
+  min-height: 160px;      /* Altura reduzida */
+  padding: 12px;          /* Menos espaço interno */
+  border-radius: 16px;
+  background-color: var(--color-neutral-0);
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.08);
+  position: relative;
+  overflow: hidden;
 }
+
+
 
 .dish-title {
     position: flex;
     justify-content: center;
+    padding: 20px;
 }
 
 .dish-heart {
@@ -46,12 +48,63 @@
     right: -10px;
     top: -10px;
     border-radius: 0px 37.5px 0px 42.5px;
+    padding: 10px;
 }
 
 .dish-description {
+    display: flex;
     color: #434343;
     text-align: center;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
 }
+
+.swiper {
+  position: relative;
+  width: 100%;
+  padding: 40px 0;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+  position: absolute;
+  top: 35%; /* 🔼 antes era 50% — agora mais acima */
+  transform: translateY(-50%);
+  z-index: 10;
+  width: 40px;
+  height: 40px;
+  opacity: 0.6;
+  background-color: #fff0f5;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+  color: #ff69b4;
+  font-size: 1.5rem;
+}
+
+.swiper-button-prev {
+  left: -60px;
+}
+
+.swiper-button-next {
+  right: -60px;
+}
+
+@media (max-width: 768px) {
+  .swiper-button-prev {
+    left: -40px;
+  }
+
+  .swiper-button-next {
+    right: -40px;
+  }
+}
+
+
+
 
 .dish-rate i {
     color: #ffdb58;
@@ -64,9 +117,19 @@
 }
 
 .dish-image {
-    height: 200px;
-    width: 200px;
-    border-radius: 50%;
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+  display: block;
+  margin: 0 auto; /* centraliza horizontalmente como fallback */
+}
+
+
+
+
+.swiper-slide {
+  width: 300px;
 }
 
 @media screen and (max-width: 1170px) {
