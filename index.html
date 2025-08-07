@@ -6,13 +6,13 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="src/styles/styles.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
-    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js" defer></script>
     <link rel="apple-touch-icon" sizes="180x180" href="src/images/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="src/images/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="src/images/favicon-16x16.png">
     <link rel="manifest" href="/site.webmanifest">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer" defer></script>
+    <script src="https://unpkg.com/scrollreveal" defer></script>
     <title>Kevelyn Doces</title>
 </head>
 <body>
@@ -91,179 +91,98 @@
             <h3 class="section-subtitle">Experimente o prazer em cada colherada</h3>
             <p style="margin-top: 20px;">Toda produção é diária e sob demanda, garantindo frescor e qualidade. <span style="font-weight: bold;">Basta fazer seu pedido e retirar no local</span>, com atendimento simpático e agilidade pra não perder um minuto de sabor.</p>
 
-            <div id="dishes" class="swiper mySwiper">
-                <div class="swiper-button-next"></div>
-                    <div class="swiper-button-prev"></div>
-                    <div class="swiper-pagination"></div>
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide dish">
-                    <div class="dish-heart">
-                        <i class="fa-solid fa-heart"></i>
-                    </div>
+            <section id="dishes" class="swiper mySwiper">
+    <div class="swiper-wrapper">
+      <!-- Slide 1 -->
+      <div class="swiper-slide dish">
+        <div class="dish-heart"><i class="fa-solid fa-heart"></i></div>
+        <img src="src/images/bombom-de-morango.jpeg" class="dish-image" alt="imagem de um bombom de morango">
+        <h3 class="dish-title">BomBom de Morango</h3>
+        <span class="dish-description">
+          São preparados com chocolate nobre, leite condensado cremoso e aquele toque artesanal que transforma cada mordida em uma memória afetiva.
+        </span>
+        <div class="dish-rate">
+          <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+        </div>
+        <div class="dish-price"><h4>R$10,00</h4></div>
+      </div>
 
-                    <img src="src/images/brigadeiro.jpeg" class="dish-image" alt="">
+      <!-- Slide 2 -->
+      <div class="swiper-slide dish">
+        <div class="dish-heart"><i class="fa-solid fa-heart"></i></div>
+        <img src="src/images/coxinha.jpeg" class="dish-image" alt="">
+        <h3 class="dish-title">Coxinhas de morango</h3>
+        <span class="dish-description">
+          Feita com massa suave e recheio de brigadeiro cremoso, envolvendo um morango fresco inteiro no centro — é como morder o carinho em forma de fruta e chocolate.
+        </span>
+        <div class="dish-rate">
+          <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+        </div>
+        <div class="dish-price"><h4>R$10,00</h4></div>
+      </div>
 
-                    <h3 class="dish-title">
-                        Brigadeiros
-                    </h3>
+      <!-- Slide 3 -->
+      <div class="swiper-slide dish">
+        <div class="dish-heart"><i class="fa-solid fa-heart"></i></div>
+        <img src="src/images/ninho-com-morango.jpeg" class="dish-image" alt="">
+        <h3 class="dish-title">Bolo de Pote Claudete</h3>
+        <span class="dish-description">
+          Combinando uma massa fofinha com camadas generosas de creme de leite Ninho, intercaladas com morangos frescos e selecionados.
+        </span>
+        <div class="dish-rate">
+          <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+        </div>
+        <div class="dish-price"><h4>R$15,00</h4></div>
+      </div>
 
-                    <span class="dish-description">
-                        São preparados com chocolate nobre, leite condensado cremoso e aquele toque artesanal que transforma cada mordida em uma memória afetiva.
-                    </span>
+      <!-- Slide 4 -->
+      <div class="swiper-slide dish">
+        <div class="dish-heart"><i class="fa-solid fa-heart"></i></div>
+        <img src="src/images/image.jpeg" class="dish-image" alt="">
+        <h3 class="dish-title">Morango com chocolate</h3>
+        <span class="dish-description">
+          Camadas generosas de massa de chocolate com creme suave e morangos mergulhados em brigadeiro gourmet.
+        </span>
+        <div class="dish-rate">
+          <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+        </div>
+        <div class="dish-price"><h4>R$15,00</h4></div>
+      </div>
 
-                    <div class="dish-rate">
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                    </div>
+      <!-- Slide 5 -->
+      <div class="swiper-slide dish">
+        <div class="dish-heart"><i class="fa-solid fa-heart"></i></div>
+        <img src="src/images/bolo-pote-ninho.jpeg" class="dish-image" alt="">
+        <h3 class="dish-title">Leite Ninho</h3>
+        <span class="dish-description">
+          Massa branca com creme de Leite Ninho e leite condensado — sabor nostálgico e cremosidade envolvente.
+        </span>
+        <div class="dish-rate">
+          <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+        </div>
+        <div class="dish-price"><h4>R$15,00</h4></div>
+      </div>
 
-                    <div class="dish-price">
-                        <h4>R$08,00</h4>
-                    </div>
-                </div>
+      <!-- Slide 6 -->
+      <div class="swiper-slide dish">
+        <div class="dish-heart"><i class="fa-solid fa-heart"></i></div>
+        <img src="src/images/bolo-pote-brigadeiro.jpeg" class="dish-image" alt="">
+        <h3 class="dish-title">Bolo de Pote Benedita</h3>
+        <span class="dish-description">
+          Bolo de chocolate com brigadeiro artesanal — cada pote é um momento de puro aconchego.
+        </span>
+        <div class="dish-rate">
+          <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+        </div>
+        <div class="dish-price"><h4>R$15,00</h4></div>
+      </div>
+    </div>
 
-                <div class="swiper-slide dish">
-                    <div class="dish-heart">
-                        <i class="fa-solid fa-heart"></i>
-                    </div>
-
-                    <img src="src/images/coxinha.jpeg" class="dish-image" alt="">
-
-                    <h3 class="dish-title">
-                        Coxinhas de morango
-                    </h3>
-
-                    <span class="dish-description">
-                        feita com massa suave e recheio de brigadeiro cremoso, envolvendo um morango fresco inteiro no centro — é como morder o carinho em forma de fruta e chocolate.
-                    </span>
-
-                    <div class="dish-rate">
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                    </div>
-
-                    <div class="dish-price">
-                        <h4>R$10,00</h4>
-                       
-                    </div>
-                </div>
-
-                <div class="swiper-slide dish">
-                    <div class="dish-heart">
-                        <i class="fa-solid fa-heart"></i>
-                    </div>
-
-                    <img src="src/images/bolo-pote-ninho-morango.jpeg" class="dish-image" alt="">
-
-                    <h3 class="dish-title">
-                        Ninho com morango
-                    </h3>
-
-                    <span class="dish-description">
-                        Combinando uma massa fofinha com camadas generosas de creme de leite Ninho, intercaladas com morangos frescos e selecionados. O contraste entre o doce suave do leite em pó e o toque levemente ácido do morango cria uma experiência única — refrescante, cremosa e viciante.
-                    </span>
-
-                    <div class="dish-rate">
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                    </div>
-
-                    <div class="dish-price">
-                        <h4>R$15,00</h4>
-                    </div>
-                </div>
-
-                <div class="swiper-slide dish">
-                    <div class="dish-heart">
-                        <i class="fa-solid fa-heart"></i>
-                    </div>
-
-                    <img src="src/images/image.jpeg" class="dish-image" alt="">
-
-                    <h3 class="dish-title">
-                        Morango com chocolate
-                    </h3>
-
-                    <span class="dish-description">
-                        Nosso bolo de pote de morango com chocolate é feito com camadas generosas de massa fofinha de chocolate, intercaladas com um creme suave e morangos frescos, mergulhados num brigadeiro gourmet que deixa cada colherada ainda mais marcante.
-                    </span>
-
-                    <div class="dish-rate">
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                    </div>
-
-                    <div class="dish-price">
-                        <h4>R$15,00</h4>
-                    </div>
-                </div>
-                <div class="swiper-slide dish">
-                    <div class="dish-heart">
-                        <i class="fa-solid fa-heart"></i>
-                    </div>
-
-                    <img src="src/images/bolo-pote-ninho.jpeg" class="dish-image" alt="">
-
-                    <h3 class="dish-title">
-                        Leite Ninho
-                    </h3>
-
-                    <span class="dish-description">
-                        Camadas fofinhas de massa branca intercaladas com um creme suave e generoso feito com Leite Ninho e leite condensado, que derrete na boca e encanta quem prova. A cremosidade é envolvente, o sabor tem aquele toque nostálgico que remete à infância, e o equilíbrio entre doçura e leveza transforma cada colherada em um carinho.
-                    </span>
-
-                    <div class="dish-rate">
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                    </div>
-
-                    <div class="dish-price">
-                        <h4>R$15,00</h4>
-                    </div>
-                </div>
-                <div class="swiper-slide dish">
-                    <div class="dish-heart">
-                        <i class="fa-solid fa-heart"></i>
-                    </div>
-
-                    <img src="src/images/bolo-pote-brigadeiro.jpeg" class="dish-image" alt="">
-
-                    <h3 class="dish-title">
-                        Bolo de Pote de Brigadeiro
-                    </h3>
-
-                    <span class="dish-description">
-                       Um clássico que conquista desde o primeiro toque da colher: camadas macias de bolo de chocolate intercaladas com brigadeiro artesanal, preparado com leite condensado, cacau puro e um toque de carinho. Cada pote é montado com equilíbrio e generosidade, para entregar um momento de puro aconchego.
-                    </span>
-
-                    <div class="dish-rate">
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                    </div>
-
-                    <div class="dish-price">
-                        <h4>R$15,00</h4>
-                    </div>
-                </div>
-            </div>
-                </div>
+    <!-- Botões e paginação -->
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
+    <div class="swiper-pagination"></div>
+  </section>
         </section>
 
         <section id="testimonials">
@@ -344,33 +263,31 @@
 </footer>
 
 
-    <script src="src/javascript/script.js"></script>
-    <script>
-        const swiper = new Swiper('.mySwiper', {
-  slidesPerView: 'auto',
-  spaceBetween: 20,
-  loop: false,
-  pagination: {
-    el: '.swiper-pagination',
-    clickable: true
-  },
-  navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev'
-  },
-  breakpoints: {
-    480: { slidesPerView: 1 },
-    768: {
-      slidesPerView: 2
-    },
-    1024: {
-      slidesPerView: 3
-    }
-  }
-});
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
 
-
-    </script>
-
+  <!-- Inicialização do Swiper -->
+  <script>
+    const swiper = new Swiper(".mySwiper", {
+      slidesPerView: 1,
+      spaceBetween: 20,
+      loop: true,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+      breakpoints: {
+        768: {
+          slidesPerView: 2,
+        },
+        1024: {
+          slidesPerView: 3,
+        },
+      },
+    });
+  </script>
 </body>
 </html>

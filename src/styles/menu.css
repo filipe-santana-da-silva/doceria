@@ -7,25 +7,27 @@
 }
 
 #dishes {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
-    gap: 20px;
+  display: flex;
+  gap: 20px;
 }
 
+
 .dish {
-  display: grid;
-  place-items: center;
-  grid-auto-rows: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* centraliza verticalmente */
+  align-items: center;     /* centraliza horizontalmente */
+  height: 400px;           /* ou o valor que você quiser */
+  padding: 20px;
   gap: 12px;
-           /* Menor largura para compactar */
-  min-height: 160px;      /* Altura reduzida */
-  padding: 12px;          /* Menos espaço interno */
   border-radius: 16px;
   background-color: var(--color-neutral-0);
   box-shadow: 0 0 8px rgba(0, 0, 0, 0.08);
   position: relative;
   overflow: hidden;
 }
+
+
 
 .dish-title {
   text-align: center;
@@ -49,14 +51,24 @@
     padding: 10px;
 }
 
-.dish-description {
+/*.dish-description {
     display: flex;
     color: #434343;
     text-align: center;
     align-items: center;
     justify-content: center;
     padding: 20px;
+}*/
+
+.dish-description {
+  max-height: 80px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 3; /* número de linhas */
+  -webkit-box-orient: vertical;
 }
+
 
 .swiper {
   position: relative;
@@ -101,9 +113,18 @@
   }
 }
 
+.dish-rate {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 4px; /* espaçamento entre as estrelas */
+  margin-top: 8px; /* opcional, para afastar do conteúdo acima */
+}
+
 
 .dish-rate i {
     color: #ffdb58;
+    font-size: 1.2rem;
 }
 
 .dish-price {
@@ -112,16 +133,33 @@
     gap: 20px;
 }
 
+.dish-description,
+.dish-price {
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+
 .dish-image {
   height: 200px;
   width: 200px;
   border-radius: 50%;
   object-fit: cover;
   display: block;
+  flex-shrink: 0;
   margin: 0 auto; /* centraliza horizontalmente como fallback */
 }
 
 
+.dish-title,
+.dish-description,
+.dish-price {
+  flex-grow: 0;
+  flex-shrink: 0;
+}
 
 
 .swiper-slide {
