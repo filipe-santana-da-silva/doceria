@@ -174,10 +174,14 @@
 }
 
 @media screen and (max-width: 600px) {
-  #dishes {
-    grid-template-columns: 1fr;
+  .dish-description {
+    -webkit-line-clamp: unset;
+    max-height: none;
+    overflow: visible;
   }
 }
+
+
 
 
 /*@media screen and (max-width: 600px) {
